@@ -9,7 +9,7 @@ class Program
 
         int guess = -1;
 
-
+        
         while (guess != magicNumber)
         {
             Console.Write("What is your guess? ");
@@ -29,7 +29,5 @@ class Program
             }
         }
     }
-     
-     
 
 } 
