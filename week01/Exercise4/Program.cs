@@ -6,14 +6,15 @@ class Program
     {
           {
         List<int> numbers = new List<int>();
+        Console.WriteLine("Enter a list numbers. type 0 when finished.");
         
         int userNumber = -1;
         while (userNumber != 0)
         {
-            Console.Write("Enter a number (0 to quit): ");
+            Console.Write("Enter number: ");
             
-            string userResponse = Console.ReadLine();
-            userNumber = int.Parse(userResponse);
+            string user = Console.ReadLine();
+            userNumber = int.Parse(user);
             
             if (userNumber != 0)
                 {
