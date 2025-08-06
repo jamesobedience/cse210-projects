@@ -1,3 +1,6 @@
+// Exceeds core requirements: I adding a fourth activity which is Gratitude Journaling.
+// This activity prompts the user with gratitude questions and lets them write brief reflections.
+
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -49,3 +52,4 @@ class Program
         }
     }
 }
+// This is the main entry point for the Mindfulness Program, allowing users to select different mindfulness activities.

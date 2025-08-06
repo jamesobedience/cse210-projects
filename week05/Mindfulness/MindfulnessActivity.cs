@@ -56,3 +56,4 @@ abstract class MindfulnessActivity
     protected abstract string GetDescription();
     protected abstract void PerformActivity();
 }
+// This abstract class represents a mindfulness activity with methods to run the activity, display start and end messages, show a spinner, and perform the activity.

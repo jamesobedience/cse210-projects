@@ -42,9 +42,10 @@ class GratitudeActivity : MindfulnessActivity
             }
 
             ShowSpinner(3);
-            timePassed += 15; // Estimate 15 seconds per prompt
+            timePassed += 15;
         }
 
         Console.WriteLine("\nThank you for journaling. Gratitude can improve mental health and overall happiness.");
     }
 }
+// This class implements a gratitude activity that prompts the user to reflect on what they are grateful for, inheriting from the MindfulnessActivity class.
