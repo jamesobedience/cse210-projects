@@ -15,6 +15,7 @@ public abstract class Goal
 
     public abstract int RecordEvent();
     public abstract bool IsComplete();
-    public abstract string GetStatus(); // For display: [ ] Goal Name, etc.
-    public abstract string GetStringRepresentation(); // For saving to file
+    public abstract string GetStatus(); 
+    public abstract string GetStringRepresentation(); 
 }
+// This class serves as a base for all goal types, providing common properties and methods.

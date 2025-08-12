@@ -52,9 +52,9 @@ public class GoalManager
                 switch (type)
                 {
                     case "SimpleGoal":
-                        AddGoal(new SimpleGoal(parts[1], parts[2], int.Parse(parts[3])) 
-                        { 
-                            // Assuming it's not complete already
+                        AddGoal(new SimpleGoal(parts[1], parts[2], int.Parse(parts[3]))
+                        {
+
                         });
                         break;
                     case "EternalGoal":
@@ -63,14 +63,18 @@ public class GoalManager
                     case "ChecklistGoal":
                         var goal = new ChecklistGoal(parts[1], parts[2], int.Parse(parts[3]),
                                                       int.Parse(parts[5]), int.Parse(parts[4]));
-                        typeof(ChecklistGoal).GetField("_currentCount", 
+                        typeof(ChecklistGoal).GetField("_currentCount",
                           System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
                           ?.SetValue(goal, int.Parse(parts[6]));
                         AddGoal(goal);
+                        break;
+                    case "NegativeGoal":
+                        AddGoal(new NegativeGoal(parts[1], parts[2], int.Parse(parts[3])));
                         break;
                 }
             }
         }
     }
 }
+// This class manages the goals, allowing for creation, recording events, and saving/loading goals.
 

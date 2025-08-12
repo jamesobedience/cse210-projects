@@ -10,7 +10,7 @@ class Program
         bool running = true;
         while (running)
         {
-        
+
             Console.WriteLine("\nEternal Quest Menu:");
             Console.WriteLine("1. Create New Goal");
             Console.WriteLine("2. List Goals");
@@ -57,7 +57,7 @@ class Program
 
     static void CreateGoal(GoalManager manager)
     {
-        Console.WriteLine("Select goal type:\n1. Simple\n2. Eternal\n3. Checklist");
+        Console.WriteLine("Select goal type:\n1. Simple\n2. Eternal\n3. Checklist\n4. Negative");
         string type = Console.ReadLine();
 
         Console.Write("Goal name: ");
@@ -82,7 +82,11 @@ class Program
                 int bonus = int.Parse(Console.ReadLine());
                 manager.AddGoal(new ChecklistGoal(name, desc, points, target, bonus));
                 break;
+            case "4":
+                manager.AddGoal(new NegativeGoal(name, desc, points));
+                break;
         }
     }
 }
+// This is the main entry point for the Eternal Quest application.
 

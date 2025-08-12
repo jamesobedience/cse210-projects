@@ -36,3 +36,4 @@ public class ChecklistGoal : Goal
     public override string GetStringRepresentation() =>
         $"ChecklistGoal|{_name}|{_description}|{_points}|{_bonus}|{_targetCount}|{_currentCount}";
 }
+// This class represents a goal that requires completing a certain number of events to earn points, with a bonus for completion.

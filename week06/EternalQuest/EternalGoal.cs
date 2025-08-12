@@ -17,3 +17,4 @@ public class EternalGoal : Goal
     public override string GetStringRepresentation() =>
         $"EternalGoal|{_name}|{_description}|{_points}";
 }
+// This class represents a goal that can be completed multiple times, earning points each time.

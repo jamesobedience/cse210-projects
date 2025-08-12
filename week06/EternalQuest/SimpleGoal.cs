@@ -27,3 +27,4 @@ public class SimpleGoal : Goal
     public override string GetStringRepresentation() =>
         $"SimpleGoal|{_name}|{_description}|{_points}|{_isComplete}";
 }
+// This class represents a simple goal that can be completed once, earning points when completed.
