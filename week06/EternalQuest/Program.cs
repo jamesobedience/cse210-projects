@@ -1,3 +1,5 @@
+// exceeds core requirements: I added a nagative goal type, a save/load feature, and a score display.
+
 using System;
 
 class Program
